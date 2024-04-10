@@ -31,6 +31,8 @@ export const PromoSection: React.FC<Props> = ({
 }) => {
   const isDesktop = useBreakpointValue({ base: false, lg: true }) || false;
 
+  console.log(">>>", isDesktop);
+
   return (
     <Flex
       position="relative"
@@ -49,10 +51,10 @@ export const PromoSection: React.FC<Props> = ({
             w="100%"
             src={isDesktop ? "/videos/promo_video.mp4" : ""}
             objectFit="cover"
-            autoPlay={isDesktop}
+            autoPlay={!isDesktop}
             loop
             id="promo_video"
-            muted={isDesktop}
+            muted={!isDesktop}
           />
         )}
       </Box>
