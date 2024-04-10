@@ -1,0 +1,341 @@
+{
+  "services": {
+    "references": {
+      "images": [
+        "/assets/references/doors/9.jpeg",
+        "/assets/references/doors/3.jpeg",
+        "/assets/references/hlinikove-okna/2.jpeg",
+        "/assets/references/hlinikove-okna/4.jpeg",
+        "/assets/references/doors/6.jpeg",
+        "/assets/references/plastove-okna/2.jpeg",
+        "/assets/references/plastove-okna/4.jpeg",
+        "/assets/references/doors/1.jpeg",
+        "/assets/references/plastove-okna/1.jpeg",
+        "/assets/references/hlinikove-okna/1.jpeg"
+      ]
+    },
+    "items": [
+      {
+        "slug": "plastove-okna",
+        "title": "Plastové okná",
+        "href": "/sluzby/plastove-okna",
+        "imageSrc": "/assets/window-plastic.png",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná",
+        "description": {
+          "title": "Typy materiálov",
+          "subtitle": "Samozrejme, pri výbere materiálov pre plastové okna je dôležité zvážiť nasledujúce body:",
+          "references": {
+            "images": [
+              "/assets/references/plastove-okna/1.jpeg",
+              "/assets/references/plastove-okna/2.jpeg",
+              "/assets/references/plastove-okna/3.jpeg",
+              "/assets/references/plastove-okna/4.jpeg",
+              "/assets/references/plastove-okna/5.jpeg"
+            ]
+          },
+          "steps": [
+            {
+              "id": "1",
+              "index": 1,
+              "title": "Výber typu rámu",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "items": [
+                {
+                  "id": "1",
+                  "imageSrc": "/assets/aluplast-4000.png",
+                  "title": "Aluplast 4000",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "70mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 45 db" },
+                    { "title": "Uf hodnota", "value": "od 1,3 W/m²K" }
+                  ],
+                  "description": "Nová generace okenních systémů MB-104 Passive vyniká skvělou tepelnou izolací, která jej předurčuje pro použití v pasivních domech a nízkoenergetické výstavbě. Systém rovněž poskytuje vysokou ochranu proti průniku vody, hluku a vzduchu. Pasivní standard oken MB-104 Passive ve verzi SI i AERO byl potvrzen v Institutu pasivních domů PHI v německém Darmstadtu."
+                },
+                {
+                  "id": "2",
+                  "imageSrc": "/assets/aluplast-7000.png",
+                  "title": "Aluplast 7000",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 46 db" },
+                    { "title": "Uf hodnota", "value": "od 1,1 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "3",
+                  "imageSrc": "/assets/aluplast-8000.png",
+                  "title": "Aluplast 8000",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "4",
+                  "imageSrc": "/assets/intertec-85.jpeg",
+                  "title": "NOVINKA - Intertec",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "4",
+                  "imageSrc": "/assets/veka-softline-82.jpeg",
+                  "title": "Veka Softline 82",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "hlinikove-okna",
+        "title": "Hliníkové okná",
+        "href": "/sluzby/hlinikove-okna",
+        "imageSrc": "/assets/window-aluminium.png",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná",
+        "description": {
+          "title": "Typy materiálov",
+          "subtitle": "Samozrejme, pri výbere materiálov pre hliníkové okna je dôležité zvážiť nasledujúce body:",
+          "references": {
+            "images": [
+              "/assets/references/hlinikove-okna/1.jpeg",
+              "/assets/references/hlinikove-okna/2.jpeg",
+              "/assets/references/hlinikove-okna/3.jpeg",
+              "/assets/references/hlinikove-okna/4.jpeg",
+              "/assets/references/hlinikove-okna/5.jpeg"
+            ]
+          },
+          "steps": [
+            {
+              "id": "1",
+              "index": 1,
+              "title": "Výber typu rámu",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "items": [
+                {
+                  "id": "1",
+                  "imageSrc": "/assets/imperial.jpeg",
+                  "title": "Imperial",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "70mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 45 db" },
+                    { "title": "Uf hodnota", "value": "od 1,3 W/m²K" }
+                  ],
+                  "description": "Nová generace okenních systémů MB-104 Passive vyniká skvělou tepelnou izolací, která jej předurčuje pro použití v pasivních domech a nízkoenergetické výstavbě. Systém rovněž poskytuje vysokou ochranu proti průniku vody, hluku a vzduchu. Pasivní standard oken MB-104 Passive ve verzi SI i AERO byl potvrzen v Institutu pasivních domů PHI v německém Darmstadtu."
+                },
+                {
+                  "id": "2",
+                  "imageSrc": "/assets/superial.jpeg",
+                  "title": "Superial",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 46 db" },
+                    { "title": "Uf hodnota", "value": "od 1,1 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "3",
+                  "imageSrc": "/assets/genesis.jpeg",
+                  "title": "Genesis",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "4",
+                  "imageSrc": "/assets/star.png",
+                  "title": "Star",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                },
+                {
+                  "id": "4",
+                  "imageSrc": "/assets/veka-softline-82.jpeg",
+                  "title": "Veka Softline 82",
+                  "details": [
+                    { "title": "Stavebná hĺbka", "value": "85mm" },
+                    { "title": "Ochrana proti hluku", "value": "do 48 db" },
+                    { "title": "Uf hodnota", "value": "od 0,79 W/m²K" }
+                  ],
+                  "description": "MB-45 je cenově velmi zajímavý systém pro použití v interiéru i exteriéru, ideální pro projekty s nízkými požadavky na teplotní odolnost. Systém MB-45 nabízí širokou škálu profilů pro různé aplikace a nabízí hospodárnost díky subtilní hloubce profilů. Systém je správnou volbou pro různé t ypy dělících příček, oken a dveří (také posuvné nebo kyvné – „lítačky“), vchody a haly, průmyslová okna a vitríny. Dostatečně pevná konstrukce zajišťuje ekonomické řešení pro průměrně zatěžované objekty."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "slug": "dvere",
+        "title": "Dvere",
+        "imageSrc": "/assets/doors.png",
+        "href": "/sluzby/dvere",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "catalogUrl": "/pdfs/dvere.pdf",
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná",
+        "description": {
+          "title": "Typ dverí",
+          "subtitle": "Samozrejme, pri výbere materiálov pre dverí je dôležité zvážiť nasledujúce body:",
+          "references": {
+            "images": [
+              "/assets/references/doors/1.jpeg",
+              "/assets/references/doors/2.jpeg",
+              "/assets/references/doors/3.jpeg",
+              "/assets/references/doors/4.jpeg",
+              "/assets/references/doors/5.jpeg",
+              "/assets/references/doors/6.jpeg",
+              "/assets/references/doors/7.jpeg",
+              "/assets/references/doors/8.jpeg",
+              "/assets/references/doors/9.jpeg",
+              "/assets/references/doors/10.jpeg"
+            ]
+          },
+          "steps": [
+            {
+              "id": "1",
+              "index": 1,
+              "title": "Výber typu dverí",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "items": [
+                {
+                  "id": "1",
+                  "imageSrc": "/assets/doors/elegante-antrazit01.png",
+                  "title": "Antracit",
+                  "details": [
+                    { "title": "krídlo hrúbky", "value": "70mm" },
+                    { "title": "Bezpečnostná trieda", "value": "II" },
+                    { "title": "Uzamykací systém", "value": "15 bodový" }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "imageSrc": "/assets/doors/elegante-TmavyDub01.jpg",
+                  "title": "Dub Tmavý",
+                  "details": [
+                    { "title": "krídlo hrúbky", "value": "70mm" },
+                    { "title": "Bezpečnostná trieda", "value": "II" },
+                    { "title": "Uzamykací systém", "value": "15 bodový" }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "imageSrc": "/assets/doors/elegante-SvetlyDub01.jpg",
+                  "title": "Dub Svetlý",
+                  "details": [
+                    { "title": "krídlo hrúbky", "value": "70mm" },
+                    { "title": "Bezpečnostná trieda", "value": "II" },
+                    { "title": "Uzamykací systém", "value": "15 bodový" }
+                  ]
+                },
+                {
+                  "id": "4",
+                  "imageSrc": "/assets/doors/elegante-SedyDub01.png",
+                  "title": "Dub Šedý",
+                  "details": [
+                    { "title": "krídlo hrúbky", "value": "70mm" },
+                    { "title": "Bezpečnostná trieda", "value": "II" },
+                    { "title": "Uzamykací systém", "value": "15 bodový" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "rolety-zaluzie",
+        "title": "Rolety & žalúzie",
+        "href": "/sluzby/rolety-zaluzie",
+        "imageSrc": "/assets/rolets.png",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná"
+      },
+      {
+        "id": "zaslenie-balkonov",
+        "title": "Zaslenie balkónov",
+        "href": "/sluzby/zaslenie-balkonov",
+        "imageSrc": "/assets/balcony-glazing.png",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná"
+      },
+      {
+        "id": "servis",
+        "title": "Servis okien & dverí",
+        "href": "/sluzby/servis",
+        "imageSrc": "/assets/service-windows.png",
+        "subtitle": "Pošlite žiadost o nezáveznú cenovú ponuku a my sa Vám ozveme čo najskor",
+        "primary_button": {
+          "title": "Cenová ponuka",
+          "href": "/cenova-ponuka"
+        },
+        "secondary_button": {
+          "title": "Kontaktujte nás",
+          "href": "#kontakt"
+        },
+        "promoBar": "Aktuálne ponúkame -20% na plastové okná"
+      }
+    ]
+  }
+}
