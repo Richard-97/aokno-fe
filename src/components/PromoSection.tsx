@@ -50,7 +50,7 @@ export const PromoSection: React.FC<Props> = ({
             minH="100%"
             w="100%"
             src={isDesktop ? "/videos/promo_video.mp4" : ""}
-            objectFit="cover"
+            objectFit={isDesktop ? "cover" : "none"}
             autoPlay={!isDesktop}
             loop
             id="promo_video"
