@@ -61,6 +61,7 @@ export default function PriceOfferPage() {
       description: "",
       isChecked: false,
     },
+    mode: "onBlur",
     resolver: yupResolver(validationSchema),
   });
 
