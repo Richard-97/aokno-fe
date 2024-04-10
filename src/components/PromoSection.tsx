@@ -49,10 +49,10 @@ export const PromoSection: React.FC<Props> = ({
             w="100%"
             src={isDesktop ? "/videos/promo_video.mp4" : ""}
             objectFit="cover"
-            autoPlay
+            autoPlay={isDesktop}
             loop
             id="promo_video"
-            muted
+            muted={isDesktop}
           />
         )}
       </Box>
