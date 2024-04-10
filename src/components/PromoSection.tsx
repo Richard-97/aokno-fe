@@ -31,18 +31,20 @@ export const PromoSection: React.FC<Props> = ({
     flexDir="column"
     {...boxProps}
   >
-    <Box
-      as="video"
-      minH="100%"
-      w="100%"
-      src="/videos/promo_video.mp4"
-      objectFit="cover"
-      autoPlay
-      loop
-      id="promo_video"
-      muted
-      display={{ base: "none", lg: "initial" }}
-    />
+    <Box display={{ base: "none", lg: "initial" }} minH="100%">
+      <Box
+        as="video"
+        minH="100%"
+        w="100%"
+        src="/videos/promo_video.mp4"
+        objectFit="cover"
+        autoPlay
+        loop
+        id="promo_video"
+        muted
+      />
+    </Box>
+
     <Flex
       position="absolute"
       top="0"
