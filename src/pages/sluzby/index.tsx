@@ -15,7 +15,7 @@ export default function ServicePage() {
   const pageDetails = getHomePageDetails();
 
   return (
-    <>
+    <Box overflowX="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (
@@ -105,6 +105,6 @@ export default function ServicePage() {
           <References images={pageDetails.services.references.images} />
         </RevealWrapper>
       </Box>
-    </>
+    </Box>
   );
 }

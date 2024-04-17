@@ -19,7 +19,7 @@ export default function HomePage() {
   const pageDetails = getHomePageDetails();
 
   return (
-    <>
+    <Box overflowX="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (
@@ -172,16 +172,16 @@ export default function HomePage() {
           </RevealWrapper>
         </Layout>
         <RevealWrapper
-          origin="bottom"
+          // origin="bottom"
           delay={300}
           duration={1500}
           distance="500px"
           scale={1.25}
-          viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
+          // viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
         >
           <ContactUsSection />
         </RevealWrapper>
       </Box>
-    </>
+    </Box>
   );
 }

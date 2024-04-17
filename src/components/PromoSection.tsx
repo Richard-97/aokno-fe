@@ -41,20 +41,19 @@ export const PromoSection: React.FC<Props> = ({
       flexDir="column"
       {...boxProps}
     >
-      <Box display={{ base: "none", lg: "initial" }} minH="100%">
-        {isDesktop && (
-          <Box
-            as="video"
-            minH="100%"
-            w="100%"
-            src={isDesktop ? "/videos/promo_video.mp4" : ""}
-            objectFit={isDesktop ? "cover" : "none"}
-            autoPlay={isDesktop}
-            loop
-            id="promo_video"
-            muted={isDesktop}
-          />
-        )}
+      <Box minH="100%">
+        <Box
+          as="video"
+          minH="100%"
+          w="100%"
+          src="/videos/promo_video.mp4"
+          objectFit={isDesktop ? "cover" : "none"}
+          autoPlay
+          loop
+          id="promo_video"
+          muted
+          playsInline
+        />
       </Box>
       <Flex
         position="absolute"
@@ -65,7 +64,7 @@ export const PromoSection: React.FC<Props> = ({
         opacity={{ base: 0, lg: "0.6" }}
       />
       <Layout
-        position={{ base: "initial", lg: "absolute" }}
+        position="absolute"
         top="0"
         bottom="0"
         p={{ base: "0", lg: "4" }}
@@ -74,15 +73,16 @@ export const PromoSection: React.FC<Props> = ({
         justifyItems="center"
         alignItems="center"
         flexDir="column"
+        zIndex={100}
       >
-        <Flex height="30%" />
+        <Flex height={{ base: "10%", lg: "30%" }} />
         <Flex
           bgGradient={colors.gradients.light_gray_bottom}
           w="100%"
           h={{ base: "100%", xl: "70%" }}
           borderTopLeftRadius={{ base: 0, lg: 12 }}
           borderTopRightRadius={{ base: 0, lg: 12 }}
-          opacity={{ base: 1, lg: 0.9 }}
+          opacity={0.9}
           p={{ base: "4", md: "8", lg: "20" }}
           flexDir="column"
         >
@@ -98,7 +98,7 @@ export const PromoSection: React.FC<Props> = ({
             {subtitle}
           </Text>
 
-          <Flex gap="4" mt={{ base: 24, lg: 8 }} flexWrap="wrap">
+          <Flex gap="4" mt={{ base: 4, lg: 8 }} flexWrap="wrap">
             <Button
               as={Link}
               href={primaryButtonProps.href}

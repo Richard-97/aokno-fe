@@ -22,7 +22,7 @@ export default function ServicePage() {
     (getServiceDetails(query.slug as string) as Service) ?? {};
 
   return (
-    <>
+    <Box overflowX="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (
@@ -174,6 +174,6 @@ export default function ServicePage() {
           />
         </RevealWrapper>
       </Box>
-    </>
+    </Box>
   );
 }
