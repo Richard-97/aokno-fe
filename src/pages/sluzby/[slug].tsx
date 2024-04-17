@@ -22,7 +22,7 @@ export default function ServicePage() {
     (getServiceDetails(query.slug as string) as Service) ?? {};
 
   return (
-    <Box overflowX="hidden">
+    <Box overflow="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (

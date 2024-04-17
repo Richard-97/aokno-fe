@@ -19,7 +19,7 @@ export default function HomePage() {
   const pageDetails = getHomePageDetails();
 
   return (
-    <Box overflowX="hidden">
+    <Box overflow="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (

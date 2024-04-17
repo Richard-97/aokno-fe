@@ -15,7 +15,7 @@ export default function ServicePage() {
   const pageDetails = getHomePageDetails();
 
   return (
-    <Box overflowX="hidden">
+    <Box overflow="hidden">
       <Seo />
       <Header>
         {({ onClose }) => (
