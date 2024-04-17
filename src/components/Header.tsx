@@ -50,7 +50,7 @@ export const Header: FC<Props> = ({
       left="0"
       py="3"
       bg={isPageScrolled ? "primary" : "transparent"}
-      zIndex={40}
+      zIndex={140}
       boxShadow={isPageScrolled ? "md" : undefined}
       {...props}
     >
