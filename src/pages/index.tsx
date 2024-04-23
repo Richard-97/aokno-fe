@@ -75,7 +75,7 @@ export default function HomePage() {
       />
       <Box bgGradient={colors.gradients.layout}>
         <Layout>
-          <Fade fraction={0.8} triggerOnce duration={1200}>
+          <Fade triggerOnce duration={1200}>
             <ServicesSection
               mt="120px"
               services={pageDetails.services.items.slice(0, 3)}
