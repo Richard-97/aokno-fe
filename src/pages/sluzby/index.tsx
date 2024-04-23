@@ -32,14 +32,6 @@ export default function ServicePage() {
               Domov
             </Link>
             <Link
-              href="/employee/1"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                fontSize: "18px",
-              }}
-            ></Link>
-            <Link
               href="/#kontakt"
               style={{
                 textDecoration: "none",
@@ -74,13 +66,13 @@ export default function ServicePage() {
           <Fade triggerOnce duration={1200}>
             <ServicesSection mt="120px" services={pageDetails.services.items} />
           </Fade>
-          <Fade>
+          <Fade triggerOnce>
             <Flex justifyContent="center" my="16">
               <PricePromoButton />
             </Flex>
           </Fade>
         </Layout>
-        <Fade>
+        <Fade triggerOnce>
           <References images={pageDetails.services.references.images} />
         </Fade>
       </Box>

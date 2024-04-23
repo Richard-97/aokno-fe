@@ -58,14 +58,6 @@ export default function ServicePage() {
               Služby
             </Link>
             <Link
-              href="/employee/1"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                fontSize: "18px",
-              }}
-            ></Link>
-            <Link
               href="/#kontakt"
               style={{
                 textDecoration: "none",
@@ -97,7 +89,7 @@ export default function ServicePage() {
       />
       <Box bgGradient={colors.gradients.layout}>
         <Layout display="flex" flexDir="column" alignItems="center">
-          <Fade>
+          <Fade triggerOnce>
             <Flex flexDir="column" alignItems="center" textAlign="center">
               <Text mt="32" mb="8" textStyle="base28" color="primary">
                 {serviceDetails.description?.title}
@@ -112,7 +104,7 @@ export default function ServicePage() {
             </Flex>
           </Fade>
           {serviceDetails?.catalogUrl && (
-            <Fade>
+            <Fade triggerOnce>
               <Flex justifyContent="center" mt="20">
                 <Flex
                   gap="4"
@@ -127,17 +119,15 @@ export default function ServicePage() {
               </Flex>
             </Fade>
           )}
-          <Fade>
+          <Fade triggerOnce>
             <Flex justifyContent="center" my="24">
               <PricePromoButton />
             </Flex>
           </Fade>
         </Layout>
-        <Fade>
-          <Steps steps={serviceDetails.description?.steps ?? []} />
-        </Fade>
+        <Steps steps={serviceDetails.description?.steps ?? []} />
         {serviceDetails.description?.references.images.length > 0 ? (
-          <Fade>
+          <Fade triggerOnce>
             <References
               images={serviceDetails.description?.references.images ?? []}
             />

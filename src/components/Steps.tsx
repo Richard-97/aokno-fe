@@ -17,7 +17,7 @@ export const Steps: React.FC<Props> = ({ steps }) => {
 
   return (
     <Flex flexDir="column" my="16">
-      <Fade>
+      <Fade triggerOnce>
         <Flex align="center" w="100%">
           {steps.map(({ id, index }) => (
             <Flex
@@ -72,7 +72,7 @@ export const Steps: React.FC<Props> = ({ steps }) => {
         </Flex>
       </Fade>
       {steps.length > 0 && (
-        <Fade>
+        <Fade triggerOnce>
           <Flex
             justifyContent="center"
             gap="10"

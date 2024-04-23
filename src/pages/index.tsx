@@ -36,14 +36,6 @@ export default function HomePage() {
               Služby
             </Link>
             <Link
-              href="/sluzby"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                fontSize: "18px",
-              }}
-            ></Link>
-            <Link
               href="#kontakt"
               style={{
                 textDecoration: "none",
@@ -95,7 +87,7 @@ export default function HomePage() {
               </Button>
             </ServicesSection>
           </Fade>
-          <Fade duration={1200}>
+          <Fade duration={1200} triggerOnce>
             <Text color="gray_light_2" textAlign="center" mt="16" mb="2">
               Vypňte formulár a my sa Vám ozveme
             </Text>
@@ -114,22 +106,22 @@ export default function HomePage() {
             </Text>
             <ContactUsForm />
           </Fade>
-          <Fade duration={1200}>
+          <Fade duration={1200} triggerOnce>
             <Flex justifyContent="center" my="28">
               <PricePromoButton />
             </Flex>
           </Fade>
-          <Fade duration={1200}>
+          <Fade duration={1200} triggerOnce>
             <AboutUsSection />
           </Fade>
-          <Fade duration={1200}>
+          <Fade duration={1200} triggerOnce>
             <PartnersSection />
           </Fade>
-          <Fade duration={1200}>
+          <Fade duration={1200} triggerOnce>
             <CustomersSection />
           </Fade>
         </Layout>
-        <Fade duration={1200} cascade={false} damping={0.1} big>
+        <Fade duration={1200} triggerOnce>
           <ContactUsSection />
         </Fade>
       </Box>
