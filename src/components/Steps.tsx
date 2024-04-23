@@ -4,7 +4,7 @@ import { StepArrow } from "./Icons/StepArrow";
 import { ServiceItemCard } from "./ServiceItemCard";
 import { Layout } from "./Layout";
 import { useState } from "react";
-import { RevealWrapper } from "next-reveal";
+import { Fade } from "react-awesome-reveal";
 
 interface Props extends BoxProps {
   steps: Step[];
@@ -17,14 +17,7 @@ export const Steps: React.FC<Props> = ({ steps }) => {
 
   return (
     <Flex flexDir="column" my="16">
-      <RevealWrapper
-        origin="bottom"
-        delay={300}
-        duration={1500}
-        distance="500px"
-        scale={1.25}
-        viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-      >
+      <Fade>
         <Flex align="center" w="100%">
           {steps.map(({ id, index }) => (
             <Flex
@@ -33,6 +26,7 @@ export const Steps: React.FC<Props> = ({ steps }) => {
               justifyContent="center"
               alignItems="center"
               position="relative"
+              display={steps.length > 1 ? undefined : "none"}
             >
               <Box
                 transition="border-color 2s"
@@ -76,17 +70,15 @@ export const Steps: React.FC<Props> = ({ steps }) => {
             </Flex>
           ))}
         </Flex>
-      </RevealWrapper>
+      </Fade>
       {steps.length > 0 && (
-        <RevealWrapper
-          origin="bottom"
-          delay={300}
-          duration={1500}
-          distance="500px"
-          scale={1.25}
-          viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-        >
-          <Flex justifyContent="center" gap="10" mt="12">
+        <Fade>
+          <Flex
+            justifyContent="center"
+            gap="10"
+            mt="12"
+            display={steps.length > 1 ? undefined : "none"}
+          >
             <Button
               disabled={activeStep === 1}
               onClick={() => {
@@ -108,18 +100,11 @@ export const Steps: React.FC<Props> = ({ steps }) => {
               Ďalej
             </Button>
           </Flex>
-        </RevealWrapper>
+        </Fade>
       )}
       <Layout>
         {activeStepDetails.title && (
-          <RevealWrapper
-            origin="bottom"
-            delay={1000}
-            duration={1500}
-            distance="500px"
-            scale={1.25}
-            viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-          >
+          <Fade>
             <Flex
               flexDir="column"
               mt="16"
@@ -127,33 +112,32 @@ export const Steps: React.FC<Props> = ({ steps }) => {
               mb="24"
               alignItems="center"
             >
-              <Text textAlign="center" mb="8">
+              <Text textAlign="center" mb="8" textStyle="base28">
                 {activeStepDetails?.title}
               </Text>
               <Flex pl={{ base: "0", lf: "40" }} alignItems="center">
-                <Text flex={1} color="gray_light_2" w="392px">
+                <Text
+                  flex={1}
+                  color="gray_light_2"
+                  w="392px"
+                  fontFamily="primary"
+                  fontWeight="semibold"
+                >
                   {activeStepDetails?.description}
                 </Text>
                 <Box mb="-200px" display={{ base: "none", lg: "initial" }}>
                   <StepArrow />
                 </Box>
               </Flex>
-              <RevealWrapper
-                origin="bottom"
-                delay={1500}
-                duration={1500}
-                distance="500px"
-                scale={1.25}
-                viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-              >
-                <Flex flexDir="column" gap="10" mt="160px">
+              <Fade>
+                <Flex flexDir="column" gap="20" mt="160px">
                   {activeStepDetails.items.map((itemProps) => (
                     <ServiceItemCard key={itemProps.id} {...itemProps} />
                   ))}
                 </Flex>
-              </RevealWrapper>
+              </Fade>
             </Flex>
-          </RevealWrapper>
+          </Fade>
         )}
       </Layout>
     </Flex>

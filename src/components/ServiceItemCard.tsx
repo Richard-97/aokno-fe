@@ -9,15 +9,23 @@ export const ServiceItemCard: React.FC<StepItem & BoxProps> = ({
   description,
   imageSrc,
   details,
+  hasObjectFit,
 }) => {
   const hasDetails = details?.length > 0;
 
   return (
     <Flex gap="6" flexDir="column">
       <Flex gap="6" flexDir={{ base: "column", lg: "row" }}>
-        <Image src={imageSrc} alt={title} width="210px" height="210px" />
+        <Image
+          src={imageSrc}
+          alt={title}
+          width="210px"
+          height="210px"
+          objectFit={hasObjectFit ? "contain" : undefined}
+          borderRadius="10px"
+        />
         <Flex flexDir="column" gap="6" flex={1}>
-          <Text textStyle="base22" mb="2">
+          <Text textStyle="base28" mb="2">
             {title}
           </Text>
           {hasDetails ? (

@@ -5,7 +5,12 @@ export const DetailBox: React.FC<StepDetail> = ({ title, value }) => (
   <Flex flexDir="column">
     <Flex alignItems="center" gap="2" mb="2">
       <Box backgroundColor="primary" h="14px" w="14px" borderRadius={9999} />
-      <Text textStyle="base16" color="primary">
+      <Text
+        textStyle="base16"
+        color="primary"
+        fontFamily="primary"
+        fontWeight="semibold"
+      >
         {title}
       </Text>
     </Flex>

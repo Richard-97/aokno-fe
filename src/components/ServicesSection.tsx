@@ -21,7 +21,7 @@ export const ServicesSection: FC<Props> = ({
     >
       {services.map((props) => (
         <GridItem key={props.title}>
-          <ServiceCard {...props} isDisabled={Boolean(!props.description)} />
+          <ServiceCard {...props} />
         </GridItem>
       ))}
     </Grid>

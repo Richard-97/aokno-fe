@@ -14,11 +14,11 @@ export const AboutUsSection = () => (
         Viac ako 20 ročné skúsenosti!
       </Text>
       <Text color="gray_light_2" textStyle="base16" lineHeight="1.2">
-        Spoločnosť, pôsobiaca v oblasti montáže plastových okien a zasklenia
-        balkónov, má bohaté 25-ročné skúsenosti v odvetví. Jej hlavným cieľom je
-        poskytovať spoľahlivé služby a kvalitný servis zákazníkom. Spolu s
-        renomovanými dodávateľmi spoločne vyvíjajú a inovujú produkty, aby
-        zabezpečili najvyššiu úroveň kvality pre svojich klientov.
+        Spoločnosť, pôsobiaca v oblasti montáže plastových a hliníkových okien a
+        zasklenia balkónov, má bohaté 25-ročné skúsenosti v odvetví. Jej hlavným
+        cieľom je poskytovať spoľahlivé služby a kvalitný servis zákazníkom.
+        Spolu s renomovanými dodávateľmi spoločne vyvíjajú a inovujú produkty,
+        aby zabezpečili najvyššiu úroveň kvality pre svojich klientov.
       </Text>
     </Flex>
     <Grid gridTemplateColumns="auto auto">

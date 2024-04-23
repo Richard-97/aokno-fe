@@ -13,12 +13,7 @@ import { SelectField } from "@/components/FormFields/SelectField";
 import { TextareaField } from "@/components/FormFields/TextAreaField";
 import { Button, Checkbox, Flex, Text, useToast } from "@chakra-ui/react";
 import { useRef } from "react";
-
-const SERVICES = [
-  { value: "window-plastic", label: "Plastové okna" },
-  { value: "window-aluminium", label: "Hlinikové okna" },
-  { value: "Doors", label: "Dvere" },
-];
+import { SERVICES } from "@/constants/common";
 
 interface Values {
   phoneNumber: string;
@@ -81,7 +76,6 @@ export const ContactUsForm = () => {
         });
       })
       .catch((error) => {
-        console.log(">>", error);
         toast({
           title: "Formulár sa nepodarilo odoslať",
           description: "Skúste to znova prosím",

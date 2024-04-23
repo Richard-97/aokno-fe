@@ -8,7 +8,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { colors } from "@/theme";
 import { getHomePageDetails } from "@/utils/getPageDetails";
 import { Box, Flex } from "@chakra-ui/react";
-import { RevealWrapper } from "next-reveal";
+import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
 export default function ServicePage() {
@@ -71,39 +71,18 @@ export default function ServicePage() {
       />
       <Box bgGradient={colors.gradients.layout}>
         <Layout>
-          <RevealWrapper
-            origin="bottom"
-            delay={300}
-            duration={1500}
-            distance="500px"
-            scale={1.25}
-            viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-          >
+          <Fade triggerOnce duration={1200}>
             <ServicesSection mt="120px" services={pageDetails.services.items} />
-          </RevealWrapper>
-          <RevealWrapper
-            origin="bottom"
-            delay={300}
-            duration={1500}
-            distance="500px"
-            scale={1.25}
-            viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-          >
+          </Fade>
+          <Fade>
             <Flex justifyContent="center" my="16">
               <PricePromoButton />
             </Flex>
-          </RevealWrapper>
+          </Fade>
         </Layout>
-        <RevealWrapper
-          origin="bottom"
-          delay={300}
-          duration={1500}
-          distance="500px"
-          scale={1.25}
-          viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-        >
+        <Fade>
           <References images={pageDetails.services.references.images} />
-        </RevealWrapper>
+        </Fade>
       </Box>
     </Box>
   );

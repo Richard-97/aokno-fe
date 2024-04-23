@@ -97,12 +97,12 @@ export const PromoSection: React.FC<Props> = ({
           <Text textStyle="heading28" mt="4" mr={{ base: "0", lg: "40" }}>
             {subtitle}
           </Text>
-
           <Flex gap="4" mt={{ base: 4, lg: 8 }} flexWrap="wrap">
             <Button
               as={Link}
               href={primaryButtonProps.href}
               variant={primaryButtonProps.variant}
+              scroll={false}
             >
               {primaryButtonProps.title}
             </Button>
@@ -110,6 +110,7 @@ export const PromoSection: React.FC<Props> = ({
               as={Link}
               href={secondaryButtonProps.href}
               variant={secondaryButtonProps.variant ?? "secondary"}
+              scroll={false}
             >
               {secondaryButtonProps.title}
             </Button>

@@ -10,6 +10,7 @@ interface Props extends BoxProps {
   priority?: boolean;
   borderRadius?: string;
   placeholder?: "blur" | "empty" | undefined;
+  objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down";
 }
 
 export const Image: FC<Props> = ({
@@ -20,6 +21,7 @@ export const Image: FC<Props> = ({
   priority,
   placeholder,
   borderRadius,
+  objectFit,
   ...boxProps
 }) => (
   <Box pointerEvents="none" {...boxProps}>
@@ -30,7 +32,7 @@ export const Image: FC<Props> = ({
       alt={alt}
       width={400}
       height={0}
-      style={{ width, height, borderRadius }}
+      style={{ width, height, borderRadius, objectFit }}
     />
   </Box>
 );

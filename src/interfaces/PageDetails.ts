@@ -17,6 +17,7 @@ export interface StepItem {
   title: string;
   description: string;
   details: StepDetail[];
+  hasObjectFit?: boolean;
 }
 
 export interface Step {

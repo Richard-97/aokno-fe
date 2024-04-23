@@ -69,11 +69,11 @@ export const ContactUsSection: FC<Props> = ({ children, ...props }) => (
           Otváracie hodiny
         </Text>
         <Flex flexDir="column" color="white" gap="3">
-          <TimeBox title="Pondelok" time="9:00 - 16:00" />
-          <TimeBox title="Utorok" time="9:00 - 16:00" />
-          <TimeBox title="Streda" time="9:00 - 16:00" />
-          <TimeBox title="Štvrtok" time="9:00 - 16:00" />
-          <TimeBox title="Piatok" time="9:00 - 16:00" />
+          <TimeBox title="Pondelok" time="8:30 - 15:30" />
+          <TimeBox title="Utorok" time="9:00 - 15:30" />
+          <TimeBox title="Streda" time="9:00 - 15:30" />
+          <TimeBox title="Štvrtok" time="9:00 - 15:30" />
+          <TimeBox title="Piatok" time="9:00 - 15:30" />
         </Flex>
       </Flex>
     </Layout>

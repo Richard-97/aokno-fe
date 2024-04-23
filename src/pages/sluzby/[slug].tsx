@@ -10,16 +10,15 @@ import { Service } from "@/interfaces/PageDetails";
 import { colors } from "@/theme";
 import { getServiceDetails } from "@/utils/getPageDetails";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { RevealWrapper } from "next-reveal";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Fade } from "react-awesome-reveal";
 
 export default function ServicePage() {
   const { query } = useRouter();
 
-  const serviceDetails =
-    (getServiceDetails(query.slug as string) as Service) ?? {};
+  const serviceDetails = getServiceDetails(query.slug as string) as Service;
 
   return (
     <Box overflow="hidden">
@@ -89,41 +88,22 @@ export default function ServicePage() {
       />
       <Box bgGradient={colors.gradients.layout}>
         <Layout display="flex" flexDir="column" alignItems="center">
-          <RevealWrapper
-            origin="bottom"
-            delay={300}
-            duration={1500}
-            distance="500px"
-            scale={1.25}
-            viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-          >
-            <Text
-              mt="32"
-              mb="8"
-              textAlign="center"
-              textStyle="base28"
-              color="primary"
-            >
-              {serviceDetails.description?.title}
-            </Text>
-            <Text
-              textAlign="center"
-              textStyle="base22"
-              color="gray_light_2"
-              maxW={{ base: "100%", lg: "680px" }}
-            >
-              {serviceDetails.description?.subtitle}
-            </Text>
-          </RevealWrapper>
+          <Fade>
+            <Flex flexDir="column" alignItems="center" textAlign="center">
+              <Text mt="32" mb="8" textStyle="base28" color="primary">
+                {serviceDetails.description?.title}
+              </Text>
+              <Text
+                textStyle="base22"
+                color="gray_light_2"
+                maxW={{ base: "100%", lg: "680px" }}
+              >
+                {serviceDetails.description?.subtitle}
+              </Text>
+            </Flex>
+          </Fade>
           {serviceDetails?.catalogUrl && (
-            <RevealWrapper
-              origin="bottom"
-              delay={300}
-              duration={1500}
-              distance="500px"
-              scale={1.25}
-              viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-            >
+            <Fade>
               <Flex justifyContent="center" mt="20">
                 <Flex
                   gap="4"
@@ -136,43 +116,24 @@ export default function ServicePage() {
                   <Text>Katalóg k dverám</Text>
                 </Flex>
               </Flex>
-            </RevealWrapper>
+            </Fade>
           )}
-          <RevealWrapper
-            origin="bottom"
-            delay={300}
-            duration={1500}
-            distance="500px"
-            scale={1.25}
-            viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-          >
+          <Fade>
             <Flex justifyContent="center" my="24">
               <PricePromoButton />
             </Flex>
-          </RevealWrapper>
+          </Fade>
         </Layout>
-        <RevealWrapper
-          origin="bottom"
-          delay={300}
-          duration={1500}
-          distance="500px"
-          scale={1.25}
-          viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-        >
+        <Fade>
           <Steps steps={serviceDetails.description?.steps ?? []} />
-        </RevealWrapper>
-        <RevealWrapper
-          origin="bottom"
-          delay={300}
-          duration={1500}
-          distance="500px"
-          scale={1.25}
-          viewOffset={{ top: 25, right: 0, bottom: 10, left: 5 }}
-        >
-          <References
-            images={serviceDetails.description?.references.images ?? []}
-          />
-        </RevealWrapper>
+        </Fade>
+        {serviceDetails.description?.references.images.length > 0 ? (
+          <Fade>
+            <References
+              images={serviceDetails.description?.references.images ?? []}
+            />
+          </Fade>
+        ) : null}
       </Box>
     </Box>
   );

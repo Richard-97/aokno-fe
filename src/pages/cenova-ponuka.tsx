@@ -20,6 +20,7 @@ import { SelectField } from "@/components/FormFields/SelectField";
 import { ForwardedRef, useRef } from "react";
 import { ArrowLeftIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { CheckboxField } from "@/components/FormFields/CheckboxField";
+import { SERVICES } from "@/constants/common";
 
 interface Values {
   phoneNumber: string;
@@ -28,12 +29,6 @@ interface Values {
   description: string;
   isChecked: boolean;
 }
-
-const SERVICES = [
-  { value: "window-plastic", label: "Plastové okna" },
-  { value: "window-aluminium", label: "Hlinikové okna" },
-  { value: "Doors", label: "Dvere" },
-];
 
 const validationSchema = yup.object().shape({
   phoneNumber: yup.string().required(REQUIRED_FIELD),
@@ -91,7 +86,6 @@ export default function PriceOfferPage() {
         });
       })
       .catch((error) => {
-        console.log(">>", error);
         toast({
           title: "Formulár sa nepodarilo odoslať",
           description: "Skúste to znova prosím",
