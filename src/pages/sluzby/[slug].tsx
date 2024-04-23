@@ -5,6 +5,7 @@ import { PricePromoButton } from "@/components/PricePromoButton";
 import { PromoSection } from "@/components/PromoSection";
 import { References } from "@/components/References";
 import { Seo } from "@/components/Seo";
+import { Spinner } from "@/components/Spinner";
 import { Steps } from "@/components/Steps";
 import { Service } from "@/interfaces/PageDetails";
 import { colors } from "@/theme";
@@ -17,6 +18,14 @@ import { Fade } from "react-awesome-reveal";
 
 export default function ServicePage() {
   const { query } = useRouter();
+
+  if (!query.slug) {
+    return (
+      <Flex justifyContent="center" alignItems="center" height="100vh">
+        <Spinner />
+      </Flex>
+    );
+  }
 
   const serviceDetails = getServiceDetails(query.slug as string) as Service;
 
