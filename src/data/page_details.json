@@ -84,7 +84,7 @@
                     { "title": "Ochrana proti hluku", "value": "do 48 db" },
                     { "title": "Uf hodnota", "value": "od 1,0 W/m²K" },
                     { "title": "Počet komôr", "value": "6" },
-                    { "title": "Počet tesnení", "value": "2" },
+                    { "title": "Počet tesnení", "value": "3" },
                     { "title": "Max. hrubka zasklenia", "value": "do 51mm" },
                     { "title": "Energetická trieda", "value": "A0" }
                   ]
@@ -159,6 +159,8 @@
                   "imageSrc": "/assets/imperial.jpeg",
                   "title": "Imperial",
                   "details": [
+                    { "title": "Stavebná hĺbka", "value": "65mm" },
+                    { "title": "Hĺbka krídla", "value": "74mm" },
                     { "title": "Uf hodnota", "value": "od 1,57 W/m²K" }
                   ]
                 },
