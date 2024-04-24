@@ -109,6 +109,7 @@ export default function PriceOfferPage() {
         position="fixed"
         backgroundColor="white"
         w="100%"
+        zIndex={100}
       >
         <ArrowLeftIcon color="primary" />
         <Text>Vrátiť sa spať</Text>
