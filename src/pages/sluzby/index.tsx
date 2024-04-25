@@ -16,7 +16,7 @@ export default function ServicePage() {
 
   return (
     <Box overflow="hidden">
-      <Seo />
+      <Seo title="Služby" />
       <Header>
         {({ onClose }) => (
           <>

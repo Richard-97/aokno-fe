@@ -20,7 +20,7 @@ export default function HomePage() {
 
   return (
     <Box overflow="hidden">
-      <Seo />
+      <Seo title="Vitajte" />
       <Header>
         {({ onClose }) => (
           <>

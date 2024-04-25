@@ -105,7 +105,7 @@ export default function PriceOfferPage() {
 
   return (
     <>
-      <Seo />
+      <Seo title="Cenová ponuka" />
       <Flex
         alignItems="center"
         gap="4"
