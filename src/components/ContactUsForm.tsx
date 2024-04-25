@@ -12,8 +12,9 @@ import { InputField } from "@/components/FormFields/InputField";
 import { SelectField } from "@/components/FormFields/SelectField";
 import { TextareaField } from "@/components/FormFields/TextAreaField";
 import { Button, Checkbox, Flex, Text, useToast } from "@chakra-ui/react";
-import { useRef } from "react";
+import { ForwardedRef, useRef, useState } from "react";
 import { SERVICES } from "@/constants/common";
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 
 interface Values {
   phoneNumber: string;
@@ -39,6 +40,8 @@ export const ContactUsForm = () => {
   const toast = useToast();
   const formRef = useRef();
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const formMethods = useForm<Values>({
     defaultValues: {
       phoneNumber: "",
@@ -55,6 +58,7 @@ export const ContactUsForm = () => {
   } = formMethods;
 
   const handleSubmit = () => {
+    setIsLoading(true);
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID as string,
@@ -76,6 +80,7 @@ export const ContactUsForm = () => {
         });
       })
       .catch((error) => {
+        console.log("error", error);
         toast({
           title: "Formulár sa nepodarilo odoslať",
           description: "Skúste to znova prosím",
@@ -84,6 +89,9 @@ export const ContactUsForm = () => {
           isClosable: true,
           position: "top",
         });
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -93,10 +101,15 @@ export const ContactUsForm = () => {
       onSubmit={handleSubmit}
       display="flex"
       justifyContent="center"
+      ref={formRef as unknown as ForwardedRef<HTMLFormElement>}
     >
       <Flex flexDir="column" alignItems="center" maxW="420px" w="100%">
-        <InputField name="email" label="Emailová adresa" />
-        <InputField name="phoneNumber" label="Tel. číslo" />
+        <InputField name="email" label="Emailová adresa">
+          <EmailIcon color="gray_light_2" />
+        </InputField>
+        <InputField name="phoneNumber" label="Tel. číslo">
+          <PhoneIcon color="gray_light_2" />
+        </InputField>
         <SelectField name="service" label="Služba" placeholder="Vyberte...">
           {SERVICES.map(({ value, label }) => (
             <option key={value} value={label}>
@@ -123,6 +136,7 @@ export const ContactUsForm = () => {
           variant="tertiary"
           type="submit"
           isDisabled={isSubmitting || !isValid}
+          isLoading={isLoading}
         >
           Poslať
         </Button>

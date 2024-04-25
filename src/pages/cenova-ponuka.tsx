@@ -17,7 +17,7 @@ import { Form } from "@/components/FormFields/Form";
 import { InputField } from "@/components/FormFields/InputField";
 import { TextareaField } from "@/components/FormFields/TextAreaField";
 import { SelectField } from "@/components/FormFields/SelectField";
-import { ForwardedRef, useRef } from "react";
+import { ForwardedRef, useRef, useState } from "react";
 import { ArrowLeftIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { CheckboxField } from "@/components/FormFields/CheckboxField";
 import { SERVICES } from "@/constants/common";
@@ -48,6 +48,8 @@ export default function PriceOfferPage() {
   const toast = useToast();
   const formRef = useRef();
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const formMethods = useForm<Values>({
     defaultValues: {
       phoneNumber: "",
@@ -65,6 +67,7 @@ export default function PriceOfferPage() {
   } = formMethods;
 
   const handleSubmit = () => {
+    setIsLoading(true);
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID as string,
@@ -85,7 +88,7 @@ export default function PriceOfferPage() {
           position: "top",
         });
       })
-      .catch((error) => {
+      .catch(() => {
         toast({
           title: "Formulár sa nepodarilo odoslať",
           description: "Skúste to znova prosím",
@@ -94,6 +97,9 @@ export default function PriceOfferPage() {
           isClosable: true,
           position: "top",
         });
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -204,6 +210,7 @@ export default function PriceOfferPage() {
                     variant="tertiary"
                     type="submit"
                     isDisabled={isSubmitting || !isValid}
+                    isLoading={isLoading}
                   >
                     Poslať
                   </Button>
