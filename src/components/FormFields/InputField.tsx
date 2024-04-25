@@ -1,7 +1,6 @@
 import { FC } from "react";
 import {
   BoxProps,
-  IconProps,
   Input,
   InputGroup,
   InputLeftElement,
@@ -26,7 +25,7 @@ export const InputField: FC<Props> = ({
   <FormField name={name} label={label} {...formFieldProps}>
     <InputGroup>
       <InputLeftElement pointerEvents="none">{children}</InputLeftElement>
-      <Input {...props} />
     </InputGroup>
+    <Input {...props} pl="10" />
   </FormField>
 );
