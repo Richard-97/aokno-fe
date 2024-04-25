@@ -46,7 +46,7 @@ export const ServiceItemCard: React.FC<StepItem & BoxProps> = ({
         <Flex gap="6">
           <Box
             width="210px"
-            height="210px"
+            height="30px"
             display={{ base: "none", lg: "initial" }}
           />
           <Text color="gray_light_2" flex={1}>
