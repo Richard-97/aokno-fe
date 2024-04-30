@@ -57,7 +57,7 @@ export const Seo: React.FC<Props> = ({
       <link rel="icon" type="image/png" sizes="32x32" href={image} />
       <meta
         name="keywords"
-        content="software, mobilné a webové aplikácie, dizajn"
+        content="plastové okná, hliníkové okná, bezpečnostné dvere, okná, terasy"
       />
       <meta itemProp="name" content={title} />
       <meta name="author" content="AOkno" className="next-head" />
