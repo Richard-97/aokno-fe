@@ -129,6 +129,7 @@ export const PromoSection: React.FC<Props> = ({
               size="sm"
               as={Link}
               href="/sluzby/plastove-okna"
+              zIndex={100}
             >
               Viac info
             </Button>
