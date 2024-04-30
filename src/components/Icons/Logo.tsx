@@ -14,40 +14,40 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
       <path
         d="M27 28L44 37"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter1_d_378_326)">
       <path
         d="M27 98L44 91"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter2_d_378_326)">
       <path
         d="M27 44L44 53"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter3_d_378_326)">
       <path
         d="M44 37V89"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter4_d_378_326)">
       <path
         d="M27 28L27 98"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter5_d_378_326)">
@@ -60,40 +60,40 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
       <path
         d="M102 27.5L85 36.5"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter8_d_378_326)">
       <path
         d="M102 97.5L85 90.5"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter9_d_378_326)">
       <path
         d="M102 43.5L85 52.5"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter10_d_378_326)">
       <path
         d="M85 36.5V88.5"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter11_d_378_326)">
       <path
         d="M102 27.5V97.5"
         stroke={color}
-        stroke-width="8"
-        stroke-linecap="round"
+        strokeWidth="8"
+        strokeLinecap="round"
       />
     </g>
     <g filter="url(#filter12_d_378_326)">
@@ -103,10 +103,10 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
       <path d="M106 97.5H101V101.5L106 103.5V97.5Z" fill={color} />
     </g>
     <g filter="url(#filter14_d_378_326)">
-      <line x1="45" y1="37" x2="83" y2="37" stroke={color} stroke-width="8" />
+      <line x1="45" y1="37" x2="83" y2="37" stroke={color} strokeWidth="8" />
     </g>
     <g filter="url(#filter15_d_378_326)">
-      <line x1="43" y1="91" x2="89" y2="91" stroke={color} stroke-width="8" />
+      <line x1="43" y1="91" x2="89" y2="91" stroke={color} strokeWidth="8" />
     </g>
     <defs>
       <filter
@@ -116,9 +116,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="65.4016"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -151,9 +151,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="63.4021"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -186,9 +186,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="65.4016"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -221,9 +221,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="56.4"
         height="108.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -256,9 +256,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="56.4"
         height="126.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -291,9 +291,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="55.4"
         height="56.9"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -326,9 +326,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="53.4"
         height="54.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -361,9 +361,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="65.4016"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -396,9 +396,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="63.4021"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -431,9 +431,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="73.402"
         height="65.4016"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -466,9 +466,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="56.4"
         height="108.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -501,9 +501,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="56.4"
         height="126.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -536,9 +536,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="55.4"
         height="56.9"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -571,9 +571,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="53.4"
         height="54.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -606,9 +606,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="86.4"
         height="56.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -641,9 +641,9 @@ export const Logo: React.FC<Props> = ({ color = "#730C05" }) => (
         width="94.4"
         height="56.4"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"

@@ -10,7 +10,7 @@ export const SwiperArrowRight = () => (
       <path
         d="M5 24.9997L20.875 54.7281L34.4469 80.1436C35.8832 82.8333 35.86 86.0672 34.3852 88.736L5 141.913"
         stroke="#FEFEFE"
-        stroke-width="11"
+        strokeWidth="11"
       />
     </g>
     <defs>
@@ -21,9 +21,9 @@ export const SwiperArrowRight = () => (
         width="88.0594"
         height="166.564"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"

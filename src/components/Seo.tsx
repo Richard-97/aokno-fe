@@ -13,7 +13,7 @@ export const Seo: React.FC<Props> = ({
   title: tmpTitle = "Domov",
   description,
   url = PROJECT_URL,
-  image = "/assets/og-image.png",
+  image = "/assets/ogimage.png",
 }) => {
   const title = [...(tmpTitle ? [tmpTitle] : []), PROJECT_NAME].join(" | ");
 
