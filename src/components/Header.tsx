@@ -1,7 +1,10 @@
 import { FC, ReactNode, useEffect, useState } from "react";
-import { Box, Flex, Show } from "@chakra-ui/react";
+import { Box, Flex, Show, Text } from "@chakra-ui/react";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Layout } from "./Layout";
+import { Image } from "./Image";
+import { Logo } from "./Icons/Logo";
+import Link from "next/link";
 
 export interface RenderProps {
   onClose: () => void;
@@ -56,6 +59,15 @@ export const Header: FC<Props> = ({
     >
       <Layout>
         <Flex alignItems="center">
+          <Flex alignItems="center" as={Link} href="/">
+            <Logo color={isPageScrolled ? "white" : undefined} />
+            <Text
+              textStyle="heading28"
+              color={isPageScrolled ? "white" : "primary"}
+            >
+              AOkno
+            </Text>
+          </Flex>
           <Box ml="auto">
             <Flex alignItems="center" gap="8">
               <Show above="md">
