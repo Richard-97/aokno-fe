@@ -62,6 +62,7 @@ export const Header: FC<Props> = ({
           <Flex alignItems="center" as={Link} href="/">
             <Logo color={isPageScrolled ? "white" : undefined} />
             <Text
+              ml="4"
               textStyle="heading28"
               color={isPageScrolled ? "white" : "primary"}
             >
