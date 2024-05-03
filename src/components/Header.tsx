@@ -65,8 +65,14 @@ export const Header: FC<Props> = ({
               ml="4"
               textStyle="heading28"
               color={isPageScrolled ? "white" : "primary"}
+              display="flex"
+              alignItems="center"
+              gap="2"
             >
-              AOkno
+              <Text as="span" fontFamily="primary" textStyle="heading40">
+                A
+              </Text>
+              <Text as="span">Okno</Text>
             </Text>
           </Flex>
           <Box ml="auto">

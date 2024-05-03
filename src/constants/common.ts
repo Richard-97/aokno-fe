@@ -1,3 +1,5 @@
+export const IS_PROD = process.env.NEXT_PUBLIC_ENVIRONMENT === "production";
+
 export const PROJECT_NAME = "aokno";
 export const PROJECT_URL = "www.aokno.sk";
 export const COMPANY_ADDRESS = "Magnezitárska 7, Košice";
