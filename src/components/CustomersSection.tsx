@@ -25,8 +25,9 @@ export const CustomersSection = () => (
         textStyle="base16"
         textAlign={{ base: "center", lg: "start" }}
       >
-        Našu prácu ocenili viac ako 100 spokojných zákazníkov po celom
-        Slovensku.
+        Našu prácu ocenilo viac ako 100 spokojných zákazníkov po celom
+        Slovensku, čo je dôkazom nášho úspechu a kvality služieb, ktoré
+        poskytujeme.
       </Text>
     </Flex>
     <Image alt="customers" src="/assets/customers-map.png" />

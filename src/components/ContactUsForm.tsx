@@ -15,12 +15,14 @@ import { Button, Checkbox, Flex, Text, useToast } from "@chakra-ui/react";
 import { ForwardedRef, useRef, useState } from "react";
 import { SERVICES } from "@/constants/common";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
+import { CheckboxField } from "./FormFields/CheckboxField";
 
 interface Values {
   phoneNumber: string;
   email: string;
   service: string;
   description: string;
+  isChecked: boolean;
 }
 
 const validationSchema = yup.object().shape({
@@ -34,6 +36,7 @@ const validationSchema = yup.object().shape({
       SELECT_FIELD
     ),
   description: yup.string().required(REQUIRED_FIELD),
+  isChecked: yup.bool().oneOf([true], "Súhlas je požadovaný").required(),
 });
 
 export const ContactUsForm = () => {
@@ -48,6 +51,7 @@ export const ContactUsForm = () => {
       email: "",
       service: "",
       description: "",
+      isChecked: false,
     },
     mode: "onBlur",
     resolver: yupResolver(validationSchema),
@@ -118,9 +122,11 @@ export const ContactUsForm = () => {
           ))}
         </SelectField>
         <TextareaField name="description" label="Popis" />
-        <Checkbox mb="8" color="gray_light_2" colorScheme="green">
-          Súhlasím so zdieľaním osobných údajov
-        </Checkbox>
+        <CheckboxField
+          name="isChecked"
+          label=""
+          description=" Súhlasím so zdieľaním osobných údajov"
+        />
         <Text
           fontFamily="primary"
           fontStyle="base14"

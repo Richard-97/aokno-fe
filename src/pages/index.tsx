@@ -92,7 +92,7 @@ export default function HomePage() {
           </Fade>
           <Fade duration={1200} triggerOnce>
             <Text color="gray_light_2" textAlign="center" mt="16" mb="2">
-              Vypňte formulár a my sa Vám ozveme
+              Vypňte formulár a my sa Vám čo najskôr ozveme
             </Text>
             <Text
               fontFamily="primary"
@@ -101,7 +101,7 @@ export default function HomePage() {
               mb="4"
             >
               <Text as="span" fontSize="24x" fontWeight="semibold">
-                Konzultácia
+                Konzultácia & zameranie
               </Text>{" "}
               <Text as="span" fontSize="24x" fontWeight="extrabold">
                 ZDARMA
