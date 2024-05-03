@@ -105,7 +105,10 @@ export default function PriceOfferPage() {
 
   return (
     <>
-      <Seo title="Cenová ponuka" />
+      <Seo
+        title="Cenová ponuka | Plastové okná Košice"
+        description="Ozvite sa nám, konzultácia ZDARMA"
+      />
       <Flex
         alignItems="center"
         gap="4"

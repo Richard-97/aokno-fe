@@ -31,7 +31,10 @@ export default function ServicePage() {
 
   return (
     <Box overflow="hidden">
-      <Seo title={serviceDetails.title} />
+      <Seo
+        title={`${serviceDetails.title} | Plastové okná Košice`}
+        description={serviceDetails.subtitle ?? "Konzultácia ZDARMA"}
+      />
       <Header>
         {({ onClose }) => (
           <>

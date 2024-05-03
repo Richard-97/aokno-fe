@@ -87,6 +87,7 @@ export const PromoSection: React.FC<Props> = ({
           flexDir="column"
         >
           <Text
+            as="h1"
             textStyle="heading64"
             color="primary"
             letterSpacing="6px"
@@ -94,7 +95,12 @@ export const PromoSection: React.FC<Props> = ({
           >
             {title}
           </Text>
-          <Text textStyle="heading28" mt="4" mr={{ base: "0", lg: "40" }}>
+          <Text
+            textStyle="heading28"
+            mt="4"
+            mr={{ base: "0", lg: "40" }}
+            as="h3"
+          >
             {subtitle}
           </Text>
           <Flex gap="4" mt={{ base: 4, lg: 8 }} flexWrap="wrap">

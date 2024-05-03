@@ -20,7 +20,10 @@ export default function HomePage() {
 
   return (
     <Box overflow="hidden">
-      <Seo title="Nové plastové okná a dvere, Konzultácia ZDARMA" />
+      <Seo
+        title="Nové plastové okná a dvere, Konzultácia ZDARMA"
+        description="Nové plastové okná a dvere v Košiciach"
+      />
       <Header>
         {({ onClose }) => (
           <>
