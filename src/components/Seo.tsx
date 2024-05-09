@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const Seo: React.FC<Props> = ({
-  title: tmpTitle = "Domov",
+  title: tmpTitle = "AOkno.sk",
   description,
   url = PROJECT_URL,
   image = "/assets/ogimage.png",
@@ -57,7 +57,7 @@ export const Seo: React.FC<Props> = ({
       <link rel="icon" type="image/png" sizes="32x32" href={image} />
       <meta
         name="keywords"
-        content="plastové okná, hliníkové okná, bezpečnostné dvere, okná, terasy"
+        content="aokno, plastové okná, hliníkové okná, bezpečnostné dvere, okná, terasy"
       />
       <meta itemProp="name" content={title} />
       <meta name="author" content="AOkno" className="next-head" />
