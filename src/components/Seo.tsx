@@ -11,7 +11,7 @@ interface Props {
 
 export const Seo: React.FC<Props> = ({
   title: tmpTitle = "AOkno.sk",
-  description,
+  description = "Plastové okná & dvere",
   url = PROJECT_URL,
   image = "/assets/ogimage.png",
 }) => {

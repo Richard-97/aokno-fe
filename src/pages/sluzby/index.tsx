@@ -17,7 +17,7 @@ export default function ServicePage() {
   return (
     <Box overflow="hidden">
       <Seo
-        title="Služby | Plastové okná Košice"
+        title="Služby | Plastové okná & dvere Košice"
         description="Ozvite sa nám, konzultácia ZDARMA"
       />
       <Header>
