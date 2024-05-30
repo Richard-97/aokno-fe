@@ -116,8 +116,10 @@ export default function ServicePage() {
                     window.open(serviceDetails?.catalogUrl, "_blank");
                   }}
                 >
-                  <Image src="/assets/pdf.png" alt="pdf icon" w="120px" />
-                  <Text>Katalóg k dverám</Text>
+                  <Image src="/assets/pdf.png" alt="pdf icon" w="90px" />
+                  <Text textStyle="base22" fontFamily="primary">
+                    Katalóg dverí
+                  </Text>
                 </Flex>
               </Flex>
             </Fade>

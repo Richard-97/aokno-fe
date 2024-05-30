@@ -152,7 +152,7 @@
               "id": "1",
               "index": 1,
               "title": "Výber typu rámu",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "description": "Prvým krokom pri výbere plastových okien je starostlivý výber typu rámu, ktorý bude najlepšie vyhovovať vašim potrebám a estetickým požiadavkám.",
               "items": [
                 {
                   "id": "1",
@@ -247,10 +247,44 @@
               "id": "1",
               "index": 1,
               "title": "Výber typu dverí",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "description": "Prvým krokom pri výbere dverí je starostlivý výber typu a materialu, ktorý bude najlepšie vyhovovať vašim potrebám a estetickým požiadavkám.",
               "items": [
                 {
                   "id": "1",
+                  "imageSrc": "/assets/doors/secum-flagman.png",
+                  "title": "SECUM Flagman",
+                  "details": [
+                    {
+                      "title": "OBOJSTRANNÁ CILINDRICKÁ VLOŽKA",
+                      "value": "spĺňa bezpečnostnú triedu 4/C podľa normy EN 1303"
+                    },
+                    {
+                      "title": "BEZKĽÚČOVÉ UZAMYKANIE",
+                      "value": "aj na hlavnom aj na prídavnom zámku"
+                    },
+                    { "title": "Protipožiarné", "value": "Áno" }
+                  ],
+                  "hasObjectFit": true
+                },
+                {
+                  "id": "2",
+                  "imageSrc": "/assets/doors/secum-euro.png",
+                  "title": "SECUM Euro",
+                  "details": [
+                    {
+                      "title": "OBOJSTRANNÁ CILINDRICKÁ VLOŽKA",
+                      "value": "spĺňa bezpečnostnú triedu 4/C podľa normy EN 1303"
+                    },
+                    {
+                      "title": "BEZKĽÚČOVÉ UZAMYKANIE",
+                      "value": "aj na hlavnom aj na prídavnom zámku"
+                    },
+                    { "title": "Protipožiarné", "value": "Nie" }
+                  ],
+                  "hasObjectFit": true
+                },
+                {
+                  "id": "3",
                   "imageSrc": "/assets/doors/elegante-antrazit01.png",
                   "title": "Antracit",
                   "details": [
@@ -261,7 +295,7 @@
                   "hasObjectFit": true
                 },
                 {
-                  "id": "2",
+                  "id": "4",
                   "imageSrc": "/assets/doors/elegante-TmavyDub01.jpg",
                   "title": "Dub Tmavý",
                   "details": [
@@ -272,7 +306,7 @@
                   "hasObjectFit": true
                 },
                 {
-                  "id": "3",
+                  "id": "5",
                   "imageSrc": "/assets/doors/elegante-SvetlyDub01.jpg",
                   "title": "Dub Svetlý",
                   "details": [
@@ -283,7 +317,7 @@
                   "hasObjectFit": true
                 },
                 {
-                  "id": "4",
+                  "id": "6",
                   "imageSrc": "/assets/doors/elegante-SedyDub01.png",
                   "title": "Dub Šedý",
                   "details": [
@@ -328,8 +362,8 @@
             {
               "id": "1",
               "index": 1,
-              "title": "Výber typu zaklenenia",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+              "title": "Výber typu zasklenenia",
+              "description": "Prvým krokom pri zasklievaní balkóna je starostlivý výber typu zasklenia, ktorý najlepšie zodpovedá potrebám a preferenciám zákazníka, pričom treba zohľadniť estetické aj funkčné požiadavky.",
               "items": [
                 {
                   "id": "1",
@@ -384,12 +418,12 @@
                   "title": "Číre sklo"
                 },
                 {
-                  "id": "1",
+                  "id": "2",
                   "imageSrc": "/assets/window-milky.jpeg",
                   "title": "Mliečne sklo"
                 },
                 {
-                  "id": "1",
+                  "id": "3",
                   "imageSrc": "/assets/window-dark.jpeg",
                   "title": "Dymové sklo"
                 }

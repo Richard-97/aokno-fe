@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Grid, Text } from "@chakra-ui/react";
 import { Image } from "./Image";
 
 export const PartnersSection = () => (
@@ -11,14 +11,20 @@ export const PartnersSection = () => (
       maxW="650px"
       color="gray_light_2"
       textStyle="base16"
+      mb="4"
     >
-      Toto sú naši partneri, s ktorými spolupracujeme pri inovácii a vývoji
-      našich produktov.
+      Partneri, s ktorými spolupracujeme pri inovácii a vývoji našich produktov.
     </Text>
-    <Flex
+    <Grid
       justifyContent="center"
-      p={{ base: "4", lg: "16" }}
       gap={{ base: "8", lg: "24" }}
+      gridTemplateColumns={{
+        base: "auto",
+        md: "auto auto",
+        lg: "auto auto auto auto",
+      }}
+      alignItems="center"
+      justifyItems="center"
     >
       <Image
         alt="hisec"
@@ -28,6 +34,8 @@ export const PartnersSection = () => (
         alignItems="center"
       />
       <Image alt="veka" src="/assets/partner-veka.png" />
-    </Flex>
+      <Image alt="aluplast" src="/assets/aluplast-logo.png" />
+      <Image alt="aliplast" src="/assets/aliplast-logo.png" width="177px" />
+    </Grid>
   </Flex>
 );
