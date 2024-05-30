@@ -13,7 +13,7 @@ export const Seo: React.FC<Props> = ({
   title: tmpTitle = "AOkno.sk",
   description = "Plastové okná & dvere",
   url = PROJECT_URL,
-  image = "/assets/ogimage.png",
+  image = "/assets/og-image.png",
 }) => {
   const title = [...(tmpTitle ? [tmpTitle] : []), PROJECT_NAME].join(" | ");
 
