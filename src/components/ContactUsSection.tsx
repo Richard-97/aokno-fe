@@ -60,7 +60,11 @@ export const ContactUsSection: FC<Props> = ({ children, ...props }) => (
             href={`mailto:${COMPANY_EMAIL}`}
           />
         </Flex>
-        <Link href={COMPANY_GOOGLE_MAPS_SHARE_LINK}>
+        <Link
+          href={COMPANY_GOOGLE_MAPS_SHARE_LINK}
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image alt="office" src="/assets/office-map.png" width="600px" />
         </Link>
       </Flex>
